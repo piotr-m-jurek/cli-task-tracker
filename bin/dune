@@ -1,0 +1,6 @@
+(executable
+ (public_name cli_task_tracker)
+ (name main)
+ (libraries cli_task_tracker core)
+ (preprocess
+  (pps ppx_deriving_yojson)))

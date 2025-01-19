@@ -1,0 +1,6 @@
+(library
+ (name cli_task_tracker)
+ (public_name cli_task_tracker)
+ (libraries yojson ppx_deriving_yojson.runtime core)
+ (preprocess
+  (pps ppx_deriving_yojson)))
