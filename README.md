@@ -17,16 +17,31 @@ Therefore I settled on using
 
 Make sure you have OCaml installed on your machine [Instructions](https://ocaml.org/install)
 
-Install deps:\
+Install deps:
 ```sh
 opam install --deps-only --yes .
 ```
 
-Build project:\
+Build project:
 
 ```sh
 opam exec -- dune build
 ```
 
+Run:
+```sh
+opam exec -- dune exec cli_task_tracker
+```
+
+This will give you the list of commands you can run with the sh
 
 
+## Commands
+
+```sh
+cli_task_tracker add <description>
+cli_task_tracker list
+cli_task_tracker list <status>
+cli_task_tracker update <status : Todo | InProgress | Done>
+cli_task_tracker remove <id>
+```
